@@ -77,6 +77,8 @@ function net_tcpprocess(rbuff)
 			{
 				if(_passtrough)
 					 break;
+
+				var type = buffer_read_s(rbuff, buffer_u8);
 				
 				if(type == 9)
 				{
